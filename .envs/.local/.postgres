@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=patfolio
+POSTGRES_USER=NyzChvXcHREeBfOVqDWtqzkYOpHJBwcm
+POSTGRES_PASSWORD=WwOYMU9zHotW3PDnEcgQ5bAViduFQexAuQu1r9hjFilYoGPjPL3ixhkEWWDpYbwJ
