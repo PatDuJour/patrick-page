@@ -32,17 +32,29 @@
 
   </head>
 
-  <body>
+  <body class="bg-dark">
 
     <div class="mb-1">
-      <nav class="navbar navbar-expand-xs navbar-light bg-transparent">
-        <button class="navbar-toggler navbar-toggler-right ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <div class="navbar navbar-expand-xs navbar-dark bg-transparent">
+        <button class="navbar-toggler navbar-toggler-right ml-auto" type="button">
+          <span class="navbar-toggler-icon color text-white"></span>
         </button>
-        {% comment %} <a class="navbar-brand" href="{% url 'home' %}">Patfolio</a> {% endcomment %}
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+        <div class="bg-dark nav-overlay hidden" id="navbarSupportedContent">
+          <section class="menu-section h-100 text-white">
+            <div class="menu-panel h-100">
+              <div class="menu">
+                <ul class="menu_primary">
+                  <li class=""><a>Home</a></li>
+                </ul>
+                <ul class="menu_secondary">
+                  <li class=""><a>Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {% comment %} <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -68,9 +80,9 @@
                 <a id="log-in-link" class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
               </li>
             {% endif %}
-          </ul>
+          </ul> {% endcomment %}
         </div>
-      </nav>
+      </div>
 
     </div>
 
@@ -96,7 +108,7 @@
     {% block javascript %}
 
       <!-- Bootstrap JS and its dependencies-->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
