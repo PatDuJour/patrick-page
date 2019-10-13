@@ -5,15 +5,19 @@ $(document).ready(function() {
             return
         }
         if($('.navbar-overlay').hasClass('hidden')) {
-            $('.navbar-overlay').toggleClass('hidden')
-            $('.navbar-overlay').toggleClass('opacity-0')
-            $('.navbar-overlay').toggleClass('opacity-1')
+            $('.navbar').toggleClass('navbar-dark');
+            $('.navbar').toggleClass('navbar-light');
+            $('.navbar-overlay').toggleClass('hidden');
+            $('.navbar-overlay').toggleClass('opacity-0');
+            $('.navbar-overlay').toggleClass('opacity-1');
             $('.navbar-overlay').toggleClass('hiding');
             setTimeout(function() {
                 $('.navbar-overlay').toggleClass('hiding');
             }, 1000);
         }
         else {
+            $('.navbar').toggleClass('navbar-light');
+            $('.navbar').toggleClass('navbar-dark');
             $('.navbar-overlay').toggleClass('hiding');
             $('.navbar-overlay').toggleClass('opacity-1');
             $('.navbar-overlay').toggleClass('opacity-0');
