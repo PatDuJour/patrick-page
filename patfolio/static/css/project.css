@@ -1,3 +1,39 @@
+.navbar-toggler {
+  z-index: 1070;
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 96px 12px 64px;
+}
+.nav-overlay.hidden {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 100%;
+}
+.menu__primary {
+  width: calc(62.5% - 32.5px);
+  float: left;
+  margin-left: 20px;
+}
+.menu__primary > li > a {
+  font-size: 32px;
+}
+.menu__secondary {
+  width: calc(37.5% - 27.5px);
+  float: left;
+  margin-left: 20px;
+}
+
 .alert-debug {
   background-color: #fff;
   border-color: #d6e9c6;
@@ -28,40 +64,6 @@
 
 .bg-dark {
   background-color: #222 !important;
-}
-
-.nav-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  padding: 96px 12px 64px;
-}
-.nav-overlay.hidden {
-  display: none;
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  height: 100%;
-}
-
-.menu_primary {
-  width: calc(62.5% - 32.5px);
-  float: left;
-  margin-left: 20px;
-}
-.menu_primary > li > a {
-  font-size: 32px;
-}
-
-.menu_secondary {
-  width: calc(37.5% - 27.5px);
-  float: left;
-  margin-left: 20px;
 }
 
 /*# sourceMappingURL=project.css.map */

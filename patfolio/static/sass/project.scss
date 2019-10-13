@@ -1,25 +1,5 @@
-// project specific CSS goes here
-
-////////////////////////////////
-		//Variables//
-////////////////////////////////
-
-// Alert colors
-
-$white: #fff;
-$mint-green: #d6e9c6;
-$black: #000;
-$pink: #f2dede;
-$dark-pink: #eed3d7;
-$dark: #222;
-$red: #b94a48;
-
-////////////////////////////////
-		//Alerts//
-////////////////////////////////
-
-// bootstrap alert CSS, translated to the django-standard levels of
-// debug, info, success, warning, error
+@import 'variables';
+@import 'nav.scss';
 
 .alert-debug {
   background-color: $white;
@@ -33,8 +13,6 @@ $red: #b94a48;
   color: $red;
 }
 
-$percentages: 0, 25, 50, 100;
-
 @each $value in $percentages {
   $percent: percentage($value/100);
 
@@ -45,40 +23,4 @@ $percentages: 0, 25, 50, 100;
 
 .bg-dark {
   background-color: $dark !important;
-}
-
-.nav-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-
-  padding: 96px 12px 64px;
-
-  &.hidden {
-    display: none;
-  }
-}
-
-.menu {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  height: 100%;
-}
-
-.menu_primary {
-  width: calc(62.5% - 32.5px);
-  float: left;
-  margin-left: 20px;
-  &>li>a {
-    font-size: 32px;
-  }
-}
-
-.menu_secondary {
-    width: calc(37.5% - 27.5px);
-    float: left;
-    margin-left: 20px;
 }
