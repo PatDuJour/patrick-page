@@ -1,3 +1,6 @@
+@import 'variables.scss';
+
+
 .navbar {
     &-toggler {
         z-index: 1070;
@@ -11,6 +14,8 @@
         height: 100vh;
 
         padding: 96px 12px 64px;
+
+        @include alpha-attribute('background-color', rgba(black, 0.85), white);
 
         &.hiding {
             transition: opacity 0.5s ease-in-out;
