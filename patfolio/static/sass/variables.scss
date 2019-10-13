@@ -9,8 +9,20 @@ $dark-pink: #eed3d7;
 $dark: #222;
 $red: #b94a48;
 
+.bg-dark {
+    background-color: $dark !important;
+}
 
 ////////////////////////////////
     //Maths//
 ////////////////////////////////
 $percentages: 0, 25, 50, 100;
+
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
