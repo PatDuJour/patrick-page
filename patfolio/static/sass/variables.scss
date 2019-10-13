@@ -8,11 +8,22 @@ $pink: #f2dede;
 $dark-pink: #eed3d7;
 $dark: #222;
 $red: #b94a48;
+$light-gray: #7D7F7F;
+$gray: #616163;
+$green: #597C4E;
+$cognac: #744D00;
 
 .bg-dark {
     background-color: $dark !important;
 }
 
+.text-primary {
+    color: $green !important;
+}
+
+.text-secondary {
+    color: $cognac !important;
+}
 ////////////////////////////////
     //Maths//
 ////////////////////////////////

@@ -27,13 +27,16 @@
         align-items: flex-end;
         height: 100%;
 
+        & > ul {
+            list-style-type: none;
+        }
 
         &__primary {
             width: calc(62.5% - 32.5px);
             float: left;
             margin-left: 20px;
             & > li > a {
-                font-size: 32px;
+                font-size: 3rem;
             }
         }
 
@@ -41,6 +44,9 @@
             width: calc(37.5% - 27.5px);
             float: left;
             margin-left: 20px;
+            & > li > a {
+                font-size: 1.25rem;
+            }
         }
     }
 }

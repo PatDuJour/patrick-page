@@ -2,6 +2,14 @@
   background-color: #222 !important;
 }
 
+.text-primary {
+  color: #597C4E !important;
+}
+
+.text-secondary {
+  color: #744D00 !important;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -33,18 +41,24 @@
   align-items: flex-end;
   height: 100%;
 }
+.navbar-menu > ul {
+  list-style-type: none;
+}
 .navbar-menu__primary {
   width: calc(62.5% - 32.5px);
   float: left;
   margin-left: 20px;
 }
 .navbar-menu__primary > li > a {
-  font-size: 32px;
+  font-size: 3rem;
 }
 .navbar-menu__secondary {
   width: calc(37.5% - 27.5px);
   float: left;
   margin-left: 20px;
+}
+.navbar-menu__secondary > li > a {
+  font-size: 1.25rem;
 }
 
 .alert-debug {
