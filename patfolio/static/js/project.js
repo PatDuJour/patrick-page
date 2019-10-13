@@ -13,7 +13,7 @@ $(document).ready(function() {
             $('.navbar-overlay').toggleClass('hiding');
             setTimeout(function() {
                 $('.navbar-overlay').toggleClass('hiding');
-            }, 1000);
+            }, 500);
         }
         else {
             $('.navbar').toggleClass('navbar-light');
@@ -24,7 +24,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('.navbar-overlay').toggleClass('hidden');
                 $('.navbar-overlay').toggleClass('hiding');
-            }, 1000);
+            }, 500);
         }
     });
 });
