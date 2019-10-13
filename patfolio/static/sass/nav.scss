@@ -2,45 +2,45 @@
     &-toggler {
         z-index: 1070;
     }
-}
 
-.nav-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    &-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
 
-    padding: 96px 12px 64px;
+        padding: 96px 12px 64px;
 
-    &.hiding {
-        transition: opacity 0.5s ease-in-out;
-    }
+        &.hiding {
+            transition: opacity 0.5s ease-in-out;
+        }
 
-    &.hidden {
-        visibility: hidden;
-    }
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    height: 100%;
-
-
-    &__primary {
-        width: calc(62.5% - 32.5px);
-        float: left;
-        margin-left: 20px;
-        & > li > a {
-            font-size: 32px;
+        &.hidden {
+            visibility: hidden;
         }
     }
 
-    &__secondary {
-        width: calc(37.5% - 27.5px);
-        float: left;
-        margin-left: 20px;
+    &-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 100%;
+
+
+        &__primary {
+            width: calc(62.5% - 32.5px);
+            float: left;
+            margin-left: 20px;
+            & > li > a {
+                font-size: 32px;
+            }
+        }
+
+        &__secondary {
+            width: calc(37.5% - 27.5px);
+            float: left;
+            margin-left: 20px;
+        }
     }
 }

@@ -1,25 +1,25 @@
 /* Project specific Javascript goes here. */
 $(document).ready(function() {
     $('.navbar-toggler').click(function() {
-        if($('.nav-overlay').hasClass('hiding')) {
+        if($('.navbar-overlay').hasClass('hiding')) {
             return
         }
-        if($('.nav-overlay').hasClass('hidden')) {
-            $('.nav-overlay').toggleClass('hidden')
-            $('.nav-overlay').toggleClass('opacity-0')
-            $('.nav-overlay').toggleClass('opacity-1')
-            $('.nav-overlay').toggleClass('hiding');
+        if($('.navbar-overlay').hasClass('hidden')) {
+            $('.navbar-overlay').toggleClass('hidden')
+            $('.navbar-overlay').toggleClass('opacity-0')
+            $('.navbar-overlay').toggleClass('opacity-1')
+            $('.navbar-overlay').toggleClass('hiding');
             setTimeout(function() {
-                $('.nav-overlay').toggleClass('hiding');
+                $('.navbar-overlay').toggleClass('hiding');
             }, 1000);
         }
         else {
-            $('.nav-overlay').toggleClass('hiding');
-            $('.nav-overlay').toggleClass('opacity-1');
-            $('.nav-overlay').toggleClass('opacity-0');
+            $('.navbar-overlay').toggleClass('hiding');
+            $('.navbar-overlay').toggleClass('opacity-1');
+            $('.navbar-overlay').toggleClass('opacity-0');
             setTimeout(function() {
-                $('.nav-overlay').toggleClass('hidden');
-                $('.nav-overlay').toggleClass('hiding');
+                $('.navbar-overlay').toggleClass('hidden');
+                $('.navbar-overlay').toggleClass('hiding');
             }, 1000);
         }
     });

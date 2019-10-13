@@ -13,8 +13,7 @@
 .navbar-toggler {
   z-index: 1070;
 }
-
-.nav-overlay {
+.navbar-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -22,28 +21,27 @@
   height: 100vh;
   padding: 96px 12px 64px;
 }
-.nav-overlay.hiding {
+.navbar-overlay.hiding {
   transition: opacity 0.5s ease-in-out;
 }
-.nav-overlay.hidden {
+.navbar-overlay.hidden {
   visibility: hidden;
 }
-
-.menu {
+.navbar-menu {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   height: 100%;
 }
-.menu__primary {
+.navbar-menu__primary {
   width: calc(62.5% - 32.5px);
   float: left;
   margin-left: 20px;
 }
-.menu__primary > li > a {
+.navbar-menu__primary > li > a {
   font-size: 32px;
 }
-.menu__secondary {
+.navbar-menu__secondary {
   width: calc(37.5% - 27.5px);
   float: left;
   margin-left: 20px;
