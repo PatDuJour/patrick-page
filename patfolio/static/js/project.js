@@ -1,6 +1,9 @@
 /* Project specific Javascript goes here. */
 $(document).ready(function() {
     $('.navbar-toggler').click(function() {
+        if($('.nav-overlay').hasClass('hiding')) {
+            return
+        }
         if($('.nav-overlay').hasClass('hidden')) {
             $('.nav-overlay').toggleClass('hidden')
             $('.nav-overlay').toggleClass('opacity-0')
